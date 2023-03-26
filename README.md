@@ -15,8 +15,7 @@ The contract starts in 3 months, so the client would like to be in their new hom
 - [Time Series Modeling](#Time-Series-Modeling)
     - [Model Forecasting](#Model-Forecasting)
     - [Forecasting Every Zip Code](#Forecasting-Every-Zip-Code)
-- [Results](#Results)
-- [Final Recommendation](#Final-Recommendation)
+- [Results and Recommendation](#Results-and-Recommendations)
 - [Appendix](#Appendix)
     - [Additional Data](#Additional-Data)
     - [Economic Conditions](#Economic-Conditions)
@@ -41,6 +40,8 @@ After a more detailed discussion with the client regarding their budget range, I
 
 ## Time Series Modeling
 
+When creating models, I used AIC to determine the best model
+
 After examining the data, I decided to create a train-test split of 80-20. This was a key decision because of the difference in price growth between the two splits, which can be seen here:
 
 ![train_test_split](https://github.com/luke-lite/Jacksonville-Housing-Prices-Time-Series-Analysis/blob/c3b67cd8a48eeea0d8f20253c606dec1e70c7aae/Graphs/train_test_split.png)
@@ -49,11 +50,29 @@ Starting around 2021, the housing prices begin to increase at a much faster rate
 
 By training a model on pre-pandemic data, it is almost guaranteed to struggle at accounting for the change in price growth in the test set. Ultimately, I have decided to still create a model based on the training set because I believe that data is more indicative of the long term housing price growth, and as I demonstrate in the Appendix, it appears that the market is undergoing a correction that will likely return it to pre-pandemic levels.
 
-I used the average median house price data from all Jacksonville zip codes to train and test an initial model, which made the following predictions:
+I used the average median house price data from all Jacksonville zip codes to train and test an initial model. I used `auto-arima` to find the best parameters, and used AIC to select the best model, which made the following predictions:
 
 ![train_model_pred](https://github.com/luke-lite/Jacksonville-Housing-Prices-Time-Series-Analysis/blob/c3b67cd8a48eeea0d8f20253c606dec1e70c7aae/Graphs/train_model_pred.png)
 
 As expected, it was unable to anticipate the increase in price growth in the test set. However, I used the same parameters when training a model on the entire dataset, as it provided the best results. The diagnostics of the model trained on the entire set are shown below, and display the expceted issues of an increase in residuals at the tail end, and deviation in the QQ-plot and correlogram:
 
 ![X_model_diag](https://github.com/luke-lite/Jacksonville-Housing-Prices-Time-Series-Analysis/blob/c3b67cd8a48eeea0d8f20253c606dec1e70c7aae/Graphs/X_model_diag.png)
+
+I then found the best model for each individual zipcode and made 2-yaer forecasts on house price. The forecast for the average of all Jacksonville zip codes looks like this:
+
+![jax_avg_forecast_2_yr](https://github.com/luke-lite/Jacksonville-Housing-Prices-Time-Series-Analysis/blob/67793e3f1a7f36357e8c37412e40878bdab2f68a/Graphs/jax_avg_forecast_2_yr.png)
+
+The above forecast is indicative of the forecasts for each individual zip code. In fact, every model predicted a drop in price over the next 2 years.
+
+## Results and Recommendations
+
+These are the top 5 zip codes by ROI:
+
+![zc_recommendations](https://github.com/luke-lite/Jacksonville-Housing-Prices-Time-Series-Analysis/blob/67793e3f1a7f36357e8c37412e40878bdab2f68a/Graphs/zc_recommendations.png)
+
+These 5 zip codes are predicted to retain the most value over the next 2 years. While it is unfortunate for the client that no zip codes are expected to increase in price overall, in the Appendix I look at some additional data that suggests prices could begin rising again within the 2-year window. The top 5 zip codes have also been plotted on the map below:
+
+
+
+## Appendix
 
