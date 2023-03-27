@@ -13,12 +13,8 @@ The contract starts in 3 months, so the client would like to be in their new hom
 - [Understanding the Data](#Understanding-the-Data)
 - [Exploratory Data Analysis](#Exploratory-Data-Analysis)
 - [Time Series Modeling](#Time-Series-Modeling)
-    - [Model Forecasting](#Model-Forecasting)
-    - [Forecasting Every Zip Code](#Forecasting-Every-Zip-Code)
 - [Results and Recommendation](#Results-and-Recommendations)
 - [Appendix](#Appendix)
-    - [Additional Data](#Additional-Data)
-    - [Economic Conditions](#Economic-Conditions)
     
 ## Understanding the Data
 
@@ -72,7 +68,10 @@ These are the top 5 zip codes by ROI:
 
 These 5 zip codes are predicted to retain the most value over the next 2 years. While it is unfortunate for the client that no zip codes are expected to increase in price overall, in the Appendix I look at some additional data that suggests prices could begin rising again within the 2-year window. The top 5 zip codes have also been plotted on the map below:
 
-
+![jax_zc_map](https://github.com/luke-lite/Jacksonville-Housing-Prices-Time-Series-Analysis/blob/1a4eaae42655bbc71655b29a3156be95968b1f48/graphs/jax_zc_map.jpg)
 
 ## Appendix
 
+I examine some additional seasonal data from Zillow as well as the historical interest rate in the US as set by the Federal Reserve. The data reinforces that the housing market was undergoing an unusual growth phase between 2020 and late 2022, and appears to be heading for a dip as 2023 begins.
+
+The difficult part is anticipating when a recovery might occur. With the Federal Reserve publicly stating their intent to continue increasing interest rates through 2023, it is likely that house prices will continue to drop, but it is possible the market could rebound in 2024. Ultimately, the extra seasonal data was not enough to provide any definite conclusions, but it does help provide additional context to help inform the forecasts on the main dataset.
