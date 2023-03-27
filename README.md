@@ -72,7 +72,7 @@ These are the top 5 zip codes by ROI:
 
 These 5 zip codes are predicted to retain the most value over the next 2 years. While it is unfortunate for the client that no zip codes are expected to increase in price overall, in the Appendix I look at some additional data that suggests prices could begin rising again within the 2-year window. The top 5 zip codes have also been plotted on the map below:
 
-
+![jax_zc_map](https://github.com/luke-lite/Jacksonville-Housing-Prices-Time-Series-Analysis/blob/1a4eaae42655bbc71655b29a3156be95968b1f48/graphs/jax_zc_map.jpg)
 
 ## Appendix
 
