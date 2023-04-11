@@ -41,7 +41,7 @@ When creating models, I used AIC to determine the best model
 
 After examining the data, I decided to create a train-test split of 80-20. This was a key decision because of the difference in price growth between the two splits, which can be seen here:
 
-![train_test_split](https://github.com/luke-lite/Jacksonville-Housing-Prices-Time-Series-Analysis/blob/058bc6633229235e8ea1b4f861c64bb1266a6bfa/graphs/train_test_split.png)
+![train_test_split](https://github.com/luke-lite/Jacksonville-Housing-Prices-Time-Series-Analysis/blob/d97cda45b1fce6454de41576b0aff01878443de1/graphs/train_test_split.png)
 
 Starting around 2021, the housing prices begin to increase at a much faster rate before flattening out in the last few months. There are several factors for this, but the biggest one is the effect of the COVID pandemic and the resulting economic policies, such as a drastic and long laasting reduction in the interest rate, which contributed to a rapid rise in house prices.
 
