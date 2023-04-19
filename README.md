@@ -55,7 +55,7 @@ As expected, it was unable to anticipate the increase in price growth in the tes
 
 ![X_model_diag](https://github.com/luke-lite/Jacksonville-Housing-Prices-Time-Series-Analysis/blob/058bc6633229235e8ea1b4f861c64bb1266a6bfa/graphs/X_model_diag.png)
 
-I then found the best model for each individual zipcode and made 2-yaer forecasts on house price. The forecast for the average of all Jacksonville zip codes looks like this:
+I then found the best model for each individual zipcode and made 2-year forecasts on housing prices. The forecast for the average of all Jacksonville zip codes looks like this:
 
 ![jax_avg_forecast_2_yr](https://github.com/luke-lite/Jacksonville-Housing-Prices-Time-Series-Analysis/blob/058bc6633229235e8ea1b4f861c64bb1266a6bfa/graphs/jax_avg_forecast_2_yr.png)
 
