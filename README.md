@@ -1,6 +1,6 @@
 # Jacksonville Housing Prices Time Series Analysis
 ## Luke DiPerna
-### January, 2023
+### February, 2023
 ![jax_skyline](https://github.com/luke-lite/Jacksonville-Housing-Prices-Time-Series-Analysis/blob/b13235d253d31b86c32ed238273c4c6157d5fa03/jax_skyline.jpg)
 
 ## Project Goal
